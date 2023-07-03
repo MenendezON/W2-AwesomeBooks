@@ -3,7 +3,7 @@ let localStorage = window['localStorage'];
 const addBook = (book) => {
   books.push(book);
   localStorage.setItem("books", JSON.stringify(books));
-  display();
+  
 }
 
 const removeBook = (event) => {
@@ -31,21 +31,21 @@ form.addEventListener("submit", (e) => {
   }
   addBook(book);
 
-  //   let target = document.querySelector(".list-book h2");
+    let target = document.querySelector(".list-book h2");
 
 
-  //     let book_item = `
-  //       <div class="book-details">
-  //         <p class="title">${books[books.length-1].title}</p>
-  //         <p class="author">${books[books.length-1].author}</p>
-  //       </div>
-  //       <button onclick="removeBook(event)">Remove</button>
-  // `;
+      let book_item = `
+        <div class="book-details">
+          <p class="title">${books[books.length-1].title}</p>
+          <p class="author">${books[books.length-1].author}</p>
+        </div>
+        <button onclick="removeBook(event)">Remove</button>
+  `;
 
-  //   let bookContainer = document.createElement("div");
-  //   bookContainer.setAttribute("class", "book");
-  //   bookContainer.innerHTML = book_item;
-  //   target.insertAdjacentElement("afterend", bookContainer);
+    let bookContainer = document.createElement("div");
+    bookContainer.setAttribute("class", "book");
+    bookContainer.innerHTML = book_item;
+    target.insertAdjacentElement("afterend", bookContainer);
   form.reset();
 });
 
@@ -80,6 +80,6 @@ const display = () => {
     bookContainer.setAttribute("class", "book");
     bookContainer.innerHTML = book_item;
     target.insertAdjacentElement("afterend", bookContainer);
-
+    console.log(books);
   }
 }
