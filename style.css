@@ -11,6 +11,7 @@ html {
 body {
   font-family: 'Lato', Arial, Helvetica, sans-serif;
   background-color: lightgray;
+  height: 100%;
 }
 
 header {
@@ -108,6 +109,15 @@ tr td:last-child a {
   margin-bottom: 3rem;
 }
 
+.list-book-body {
+  width: 100%;
+  border: 0.3rem solid #000;
+}
+
+.bookBackground {
+  background-color: #ddd;
+}
+
 .list-book .book {
   display: flex;
   justify-content: space-between;
@@ -189,6 +199,11 @@ tr td:last-child a {
   row-gap: 1rem;
   background-color: #fff;
   border-top-left-radius: 10rem;
+}
+
+section {
+  height: 90vh;
+  margin: 0 24px;
 }
 
 .contact-information h2 {
