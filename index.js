@@ -66,32 +66,11 @@ form.addEventListener('submit', (e) => {
   form.reset();
 });
 
-/* const display = () => {
-  for (let i = 0; i < books.length; i += 1) {
-    const bookItem = `
-      <div class="book-details">
-        <p class="title">${books[i].title} </p>
-        <p class="author">${books[i].author}</p>
-      </div>
-      <button onclick="removeBook(${i})">Remove</button>
-`;
-
-    const target = document.querySelector('.list-book');
-    const h2 = document.createElement('h2');
-    target.appendChild(h2);
-
-    const bookContainer = document.createElement('div');
-    bookContainer.setAttribute('class', 'book');
-    bookContainer.innerHTML = bookItem;
-    target.insertAdjacentElement('afterend', bookContainer);
-  }
-}; */
 
 window.addEventListener('load', () => {
   const data = localStorage.getItem('books');
   if (data) {
     books = JSON.parse(data);
-    // console.log(JSON.parse(localStorage.getItem("books")));
   } else {
     books = [];
   }
