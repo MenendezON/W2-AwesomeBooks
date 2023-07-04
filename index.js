@@ -56,7 +56,7 @@ const display = () => {
         <p class="title">"${book.title}" by</p>
         <p class="author">${book.author}</p>
       </div>
-      <button onclick="removeBook(${i})">Remove</button>
+      <button id="remove" onclick="removeBook(${i})">Remove</button>
     `;
 
     const bookContainer = document.createElement('div');
@@ -71,12 +71,18 @@ const display = () => {
     contain.appendChild(bookContainer);
   });
 };
+const rm = document.querySelectorAll('#remove');
 
-/* eslint-disable no-unused-vars */
 const removeBook = (index) => {
   bookList.remove(index);
   display();
 };
+
+rm.forEach((x, i) => {
+  rm[i].addEventListener('click', () => {
+    removeBook(i);
+  });
+});
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
