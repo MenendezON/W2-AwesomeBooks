@@ -108,6 +108,15 @@ tr td:last-child a {
   margin-bottom: 3rem;
 }
 
+.list-book-body {
+  width: 100%;
+  border: 0.3rem solid #000;
+}
+
+.bookBackground {
+  background-color: #ddd;
+}
+
 .list-book .book {
   display: flex;
   justify-content: space-between;
