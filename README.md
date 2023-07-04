@@ -106,6 +106,10 @@ you can deploy this project using: any web hosting provider such as neamcheap, g
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/rida-ajroudi/)
 
 
+- GitHub: [@menendezon](https://github.com/menendezon)
+- Twitter: [@menendezon](https://twitter.com/menendezon)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/menendezon)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
