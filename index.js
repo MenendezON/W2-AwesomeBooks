@@ -45,7 +45,7 @@ const display = () => {
   });
   contain.appendChild(table);
 };
-
+/* eslint-disable no-unused-vars */
 const removeBook = (index) => {
   books = books.filter((book) => book.title !== books[index].title);
   localStorage.setItem('books', JSON.stringify(books));
@@ -65,7 +65,6 @@ form.addEventListener('submit', (e) => {
   display();
   form.reset();
 });
-
 
 window.addEventListener('load', () => {
   const data = localStorage.getItem('books');
