@@ -11,6 +11,7 @@ html {
 body {
   font-family: 'Lato', Arial, Helvetica, sans-serif;
   background-color: lightgray;
+  height: 100%;
 }
 
 header {
@@ -198,6 +199,10 @@ tr td:last-child a {
   row-gap: 1rem;
   background-color: #fff;
   border-top-left-radius: 10rem;
+}
+section{
+  height: 90vh;
+  margin: 0 24px;
 }
 
 .contact-information h2 {
