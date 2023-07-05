@@ -12,6 +12,7 @@ body {
   font-family: 'Lato', Arial, Helvetica, sans-serif;
   background-color: lightgray;
   height: 100%;
+  overflow: hidden;
 }
 
 header {
@@ -202,7 +203,7 @@ tr td:last-child a {
 }
 
 section {
-  height: 90vh;
+  height: 100vh;
   margin: 0 24px;
 }
 
